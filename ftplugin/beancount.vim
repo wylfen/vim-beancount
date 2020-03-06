@@ -27,5 +27,8 @@ command! -buffer -range AlignCommodity
 command! -buffer -range GetContext
             \ :call beancount#get_context()
 
+command! -nargs=? -buffer FetchPrice
+            \ :call beancount#fetch_price(<f-args>)
+
 " Omnifunc for account completion.
 setl omnifunc=beancount#complete

@@ -6,6 +6,19 @@ function! s:startswith(string, prefix) abort
     return strpart(a:string, 0, strlen(a:prefix)) == a:prefix
 endfunction
 
+function! beancount#fetch_price(...) abort
+	let l:date = a:0 > 0 ? a:1 : strftime("%Y-%m-%d")
+
+	let l:output = split(system('bean-price -d ' . l:date . ' -i ' . expand('%')), '\v\n')
+
+	if v:shell_error > 0
+		echohl ErrorMsg | echo l:output[-1] | echohl None
+	elseif len(l:output) > 0
+		call append(line('.'), l:output)
+		silent norm! gq}
+	endif
+endfunction
+
 " Align currency on decimal point.
 function! beancount#align_commodity(line1, line2) abort
     " Save cursor position to adjust it if necessary.

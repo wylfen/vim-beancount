@@ -50,6 +50,15 @@ COMMANDS                                              *beancount-commands*
                         vnoremap <buffer> <leader>= :AlignCommodity<CR>
 <
 
+                                                      *beancount-:FetchPrice*
+:FetchPrice [date]  Uses bean-price to fetch prices for a given date and
+                    appends them to the current buffer. The ledger passed to
+                    bean-price is the current file.
+
+                    The date is either today or any [date] given, formatted
+                    like %Y-%m-%d.
+
+<
                                                       *beancount-:GetContext*
 :GetContext         Uses bean-doctor context to display the context of the
                     current line.
