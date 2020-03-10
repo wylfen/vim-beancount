@@ -18,6 +18,4 @@ copy all of the files into the appropriate places inside your '.vim' directory.
 
 * Use `:make` to run `bean-check` and load errors in the quickfix window.
 
-* The `AlignCommodity` command lines up all your decimal points.
-
 For full details, see [doc/beancount.txt](doc/beancount.txt).
