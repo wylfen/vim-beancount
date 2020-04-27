@@ -117,12 +117,6 @@ This behavior can be enabled using >
 
         let g:beancount_detailed_first = 1
 <
-Deoplete~
-                                                    *beancount-complete-deoplete*
-
-The plugin ships with a source for the deoplete.nvim, which provides
-asynchronous autocompletion. This should just work if deoplete is enabled. The
-options for the account completion do not work for the deoplete source.
 
 SYNTAX                                              *beancount-syntax*
 
