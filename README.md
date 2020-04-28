@@ -1,21 +1,20 @@
 # vim-beancount
 
-This is the beancount filetype for Vim.  Includes highlighting and some basic
-functions.
+This is a mildly simplified fork of vim-beancount, with the following changes:
+
+- Dropped support for syntastic, ale, and deoplete. I don't use these plugins.
+- AlignCommodity is fully replaced with `bean-format` through `formatprg`.
+
+More code might be refactored or rewritten in the future. The overall goal is
+to simplify and minimize, preferring the use of native vim and beancount
+functionality instead of depending on additional code or other plugins.
+
+Keep in mind that this is first and foremost for personal use.
 
 ## Installation
 
-I suggest [Vundle](https://github.com/gmarik/Vundle.vim) or
-[Pathogen](https://github.com/tpope/vim-pathogen), but you can also just
-copy all of the files into the appropriate places inside your '.vim' directory.
+Use native Vim package support, see https://vimhelp.org/repeat.txt.html#packages
 
 ## Feature Highlights
-
-* Syntax highlighting and indenting.
-
-* Completion: Type `Ex:Oth` followed by `^X^O` to get `Expenses:Donations:Other`
-  (provided that you have opened an account with that name).
-
-* Use `:make` to run `bean-check` and load errors in the quickfix window.
 
 For full details, see [doc/beancount.txt](doc/beancount.txt).
