@@ -4,6 +4,9 @@ Author:   Nathan Grigg <http://nathangrigg.net>
 Repo:     https://github.com/nathangrigg/vim-beancount
 License:  Same terms as Vim itself (see |license|).
 
+Forked-By: Wolfgang Müller <https://oriole.systems>
+Repo:      https://github.com/wylfen/vim-beancount
+
 INTRODUCTION                                          *beancount*
 
 Filetype plugin and functions for working with beancount files.
