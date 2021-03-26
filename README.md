@@ -18,4 +18,4 @@ Use native Vim package support, see [here](https://vimhelp.org/repeat.txt.html#p
 
 ## Feature Highlights
 
-For full details, see [doc/beancount.txt](doc/beancount.txt).
+See `:help beancount` for full details.
