@@ -1,6 +1,7 @@
 # vim-beancount
 
-This is a mildly simplified fork of vim-beancount, with the following changes:
+This is a mildly simplified fork of [vim-beancount](https://github.com/nathangrigg/vim-beancount),
+with the following changes:
 
 - Dropped support for syntastic, ale, and deoplete. I don't use these plugins.
 - AlignCommodity is fully replaced with `bean-format` through `formatprg`.
@@ -13,7 +14,7 @@ Keep in mind that this is first and foremost for personal use.
 
 ## Installation
 
-Use native Vim package support, see https://vimhelp.org/repeat.txt.html#packages
+Use native Vim package support, see [here](https://vimhelp.org/repeat.txt.html#packages).
 
 ## Feature Highlights
 
